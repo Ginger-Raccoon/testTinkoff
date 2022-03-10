@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Ginger-Raccoon/testTinkoff/static/css/main.dd8ec001.css",
-    "main.js": "/Ginger-Raccoon/testTinkoff/static/js/main.7aa2a89d.js",
+    "main.js": "/Ginger-Raccoon/testTinkoff/static/js/main.16ff83b4.js",
     "static/media/theme.png": "/Ginger-Raccoon/testTinkoff/static/media/theme.ec2df9047ce616e9dd81.png",
     "static/media/main_header.png": "/Ginger-Raccoon/testTinkoff/static/media/main_header.910ebeaa5ee34cdb9b10.png",
     "static/media/lock.svg": "/Ginger-Raccoon/testTinkoff/static/media/lock.9e2fefb77b2a71268a92.svg",
@@ -9,10 +9,10 @@
     "index.html": "/Ginger-Raccoon/testTinkoff/index.html",
     "static/media/clock.svg": "/Ginger-Raccoon/testTinkoff/static/media/clock.307d9a10e8a03e839bbc.svg",
     "main.dd8ec001.css.map": "/Ginger-Raccoon/testTinkoff/static/css/main.dd8ec001.css.map",
-    "main.7aa2a89d.js.map": "/Ginger-Raccoon/testTinkoff/static/js/main.7aa2a89d.js.map"
+    "main.16ff83b4.js.map": "/Ginger-Raccoon/testTinkoff/static/js/main.16ff83b4.js.map"
   },
   "entrypoints": [
     "static/css/main.dd8ec001.css",
-    "static/js/main.7aa2a89d.js"
+    "static/js/main.16ff83b4.js"
   ]
 }
