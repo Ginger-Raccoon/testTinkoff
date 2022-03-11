@@ -9,7 +9,7 @@
 + MobX
 
 ### Демо
-https://ginger-raccoon.github.io/testTinkoff/
+http://tinkoff.ilya.rjadysh.com/
 
 ### Развертывание проекта
 1. Установить `Node.js`
