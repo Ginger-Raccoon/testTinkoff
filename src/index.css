@@ -1,13 +1,179 @@
+@font-face {
+  font-family: 'TinkoffSans';
+  src: url('https://www.cdn-tinkoff.ru/platform/fonts/TinkoffSans/v1/TinkoffSans.woff2') format('woff2'),
+    url('https://www.cdn-tinkoff.ru/platform/fonts/TinkoffSans/v1/TinkoffSans.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: 'haas';
+  src:
+      url('https://www.cdn-tinkoff.ru/platform/fonts/haas/v6/NeueHaasUnicaW1G-Regular.woff2') format('woff2'),
+      url('https://www.cdn-tinkoff.ru/platform/fonts/haas/v6/NeueHaasUnicaW1G-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'haas';
+  src:
+      url('https://www.cdn-tinkoff.ru/platform/fonts/haas/v6/NeueHaasUnicaW1G-Medium.woff2') format('woff2'),
+      url('https://www.cdn-tinkoff.ru/platform/fonts/haas/v6/NeueHaasUnicaW1G-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'haas';
+  src:
+      url('https://www.cdn-tinkoff.ru/platform/fonts/haas/v6/NeueHaasUnicaW1G-Bold.woff2') format('woff2'),
+      url('https://www.cdn-tinkoff.ru/platform/fonts/haas/v6/NeueHaasUnicaW1G-Bold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+:root {
+  --bg-grey: rgba(246, 247, 248, 1);
+  --tds-color-primary: #ffdd2d;
+  --tds-color-primary-hover: #fcc521;
+  --box-shadow: rgba(0, 0, 0, 0.12);
+  --font-card-inform: rgba(0, 0, 0, 0.54);
+  --color-text: rgba(0, 0, 0, 0.8);
+  --link-color: #336FEE;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: TinkoffSans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
+
+
+.title {
+  font-size: 36px;
+  line-height: 40px;
+  font-style: normal;
+  font-weight: 500;
+  margin: 0;
+}
+
+.text {
+  font-family: haas, pragmatica, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+  color: var(--color-text);
+}
+
+
+.subtitle {
+  font-size: 17px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.link {
+  cursor: pointer;
+  color: var(--link-color);
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+/* Swiper */
+
+
+.swiper {
+  max-width: 724px;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1
+}
+
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  box-sizing: content-box;
+  margin-left: 4px;
+}
+
+.swiper-android .swiper-slide,.swiper-wrapper {
+  transform: translate3d(0px,0,0)
+}
+
+.swiper-slide {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition-property: transform
+}
+
+.swiper-slide-invisible-blank {
+  visibility: hidden
+}
+
+.swiper-autoheight,.swiper-autoheight .swiper-slide {
+  height: auto
+}
+
+.swiper-autoheight .swiper-wrapper {
+  align-items: flex-start;
+  transition-property: transform,height
+}
+
+.swiper-backface-hidden .swiper-slide {
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden
+}
+
+
+.swiper-button-next,.swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  width: 32px;
+  height: 32px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.swiper-button-next.swiper-button-disabled,.swiper-button-prev.swiper-button-disabled {
+  display: none;
+}
+
+.swiper-button-next:after,.swiper-button-prev:after {
+  background-color: rgba(236, 241, 247, 1);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+
+.swiper-button-prev {
+  top: 55%;
+  left: 10px;
+  background-image: url('./images/swiper-button.png');
+  transform: rotate(180deg);
+  right: auto
+}
+
+.swiper-button-next {
+  top: 55%;
+  right: 30%;
+  background-image: url('./images/swiper-button.png');
+  left: auto
+}
+
+
+.swiper-button-lock {
+  display: none
 }

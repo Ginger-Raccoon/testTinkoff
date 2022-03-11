@@ -1,0 +1,40 @@
+.title{
+  margin-bottom: 24px;
+}
+
+.container {
+  position: relative;
+  text-align: left;
+}
+
+.card {
+  text-align: center;
+  max-width: 334px;
+  padding: 30px 16px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: solid 1px #EAECEE;
+  margin: 0;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.name {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  margin: 14px 0 10px;
+}
+
+.review {
+  font-size: 15px;
+  line-height: 24px;
+  color: var(--font-card-inform);
+}
+
+

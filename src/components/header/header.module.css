@@ -1,0 +1,34 @@
+.main__header {
+  background-color: var(--bg-grey);
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1104px;
+  min-height: 312px;
+  margin: 0 auto;
+}
+
+.header__info {
+  text-align: left;
+  padding: 48px 0;
+}
+
+.header__title {
+  max-width: 528px;
+  margin-bottom: 24px;
+}
+
+.header__subtitle {
+  max-width: 528px;
+  white-space: break-spaces;
+}
+
+.header__image {
+  align-self: center;
+}
+
+.header__button {
+  margin-top: 48px;
+}

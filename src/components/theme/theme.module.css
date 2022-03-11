@@ -1,0 +1,7 @@
+.content__container{
+  max-width: 1104px;
+  margin: 48px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}

@@ -1,0 +1,82 @@
+.card__container {
+  display: flex;
+  max-width:  816px;
+  box-shadow: 0px 4px 24px var(--box-shadow);
+  box-sizing: border-box;
+  border-radius: 8px;
+  text-align: left;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.card__information {
+  display: flex;
+  color: var(--font-card-inform);
+  font-size: 13px;
+  line-height: 20px;
+  padding-left: 20px;
+  gap: 42px;
+}
+
+.card__time {
+  position: relative;
+}
+
+.card__time::before {
+  content: '';
+  position: absolute;
+  left: -18px;
+  background-image: url(../../images/clock.svg);
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+}
+
+.card__theme{
+  position: relative;
+}
+
+.card__status_unblocked::before {
+  content: '';
+  position: absolute;
+  left: -20px;
+  background-image: url(../../images/lock-open.svg);
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+}
+
+.card__status_block::before {
+  content: '';
+  position: absolute;
+  left: -20px;
+  background-image: url(../../images/lock.svg);
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+}
+
+.card__description {
+  max-width: 636px;
+  margin: 12px 0 0;
+  color: var(--font-card-descr);
+}
+
+.card__title {
+  margin: 0;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.8px;
+}
+
+.card__subtitle {
+  margin: 12px 0 24px;
+  font-size: 15px;
+  line-height: 24px;
+  max-width: 600px;
+}
+
+.card__img {
+  width: 128px;
+  height: 128px;
+}

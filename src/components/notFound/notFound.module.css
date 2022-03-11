@@ -1,0 +1,89 @@
+.container {
+  padding: 0 16px;
+  margin: 32px auto;
+  text-align: center;
+  max-width: 288px;
+  color: #333;
+  font-size: 15px;
+  font-family: haas, pragmatica, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+a {
+	color: #1771E6;
+	text-decoration: none;
+	background-color: transparent;
+}
+
+a:active,a:hover {
+	outline: none;
+	color: #1464cc;
+}
+
+img {
+  border-style: none;
+  vertical-align: top;
+}
+
+.logoWrapper {
+  font-size: 0;
+  margin-bottom: 48px;
+}
+
+.picture {
+  margin: 0 auto 35px auto;
+  max-width: 100%;
+  max-height: 96px;
+}
+
+.title {
+  margin: 0 0 8px 0;
+  font-family: TinkoffSans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.2;
+  letter-spacing: -0.3px;
+}
+
+.content {
+  font-size: 15px;
+  line-height: 24px;
+  color: #666;
+}
+
+
+@media screen and (min-width: 600px) {
+  .container {
+    margin-top: 48px;
+    margin-bottom: 48px;
+    font-size: 17px;
+    line-height: 1.41;
+    max-width: 512px;
+  }
+
+  .title {
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 608px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .picture {
+    max-height: none;
+  }
+}
+
+@media screen and (min-width: 1048px) {
+  .container {
+    max-width: 536px;
+  }
+}
+

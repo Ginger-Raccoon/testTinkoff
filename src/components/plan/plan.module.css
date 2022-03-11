@@ -1,0 +1,48 @@
+.container {
+  text-align: left;
+}
+
+.cards {
+  display: flex;
+  gap: 49px;
+  margin-top: 24px;
+}
+
+.card {
+  margin: 0;
+  padding: 0;
+  background-color: #F6F7F8;
+  box-sizing: border-box;
+  padding: 16px;
+  min-width: 335px;
+}
+
+.card__title {
+  margin: 0;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.item {
+  list-style-type: none;
+  margin: 12px 0 12px 25px;
+  position: relative;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.item::before {
+  content: ' ';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: var(--tds-color-primary);
+  border-radius: 50%;
+  top: 40%;
+  left: -9%
+}
+
+.item:last-child {
+  margin-bottom: 0;
+}

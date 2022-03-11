@@ -1,0 +1,18 @@
+.description__container {
+  text-align: left;
+  white-space: break-spaces;
+}
+
+.description__subtitle {
+  margin-top: 24px;
+}
+
+.description__text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 40px;
+  max-width: 816px;
+  font-size: 17px;
+  line-height: 24px;
+}
