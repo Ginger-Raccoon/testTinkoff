@@ -17,3 +17,11 @@
 .button:hover {
   background-color: var(--tds-color-primary-hover);
 }
+
+.button_type_disabled {
+  cursor: auto;
+}
+
+.button_type_disabled:hover {
+  background-color: var(--tds-color-primary);
+}
